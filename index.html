@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="left-side">
+        <div id="bar" style="background-color: rgba(0, 0, 0, 0.6)">
+        
+            <img src="images/odin-lined.png" alt="Odin Project Logo">
+            <p>Iron</p>
+
+        </div>
+    </div>
+    <div id="right-side">
+        <div id="title">
+            <p>This is not a real online service! You know you need something like this in your life to 
+                help you realize your deepest dreams. Sign up now to get started.</p>
+            
+            <p>You <i>know</i> you want to.</p>
+        </div>
+        <form method="POST" action="thanks.html">
+            <div id="form-container">
+                <p id="form-title">Let's do this!</p>
+                <div id="input-ctn">
+                    <div id="left-forms">
+                        <div class="input-labels">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="firt-name" name="first-name" required>
+                        </div>
+                        <div class="input-labels">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-labels">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" minlength='6' required>
+                        </div>
+                    </div>
+                    <div id="right-forms">
+                        <div class="input-labels">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                        <div class="input-labels">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="phone-number" name="phone-number" 
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" required>
+                        </div>
+                        <div class="input-labels">
+                            <label for="confirm-pass">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-pass" name="confirm-pass" minlength="6" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="Create" type="submit">Create Account</button>
+        </form>
+
+        <div id="login">
+            <p> Already have an Account? <a href="#">Log in</a></p> 
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
